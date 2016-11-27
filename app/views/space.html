@@ -1,1 +1,60 @@
-<p>This is the space view.</p>
+<title> Menu</title>
+<link rel="stylesheet" type="text/css" href="views/space/css/estilos.css">
+<script src="views/space/js/juego.js" language="JavaScript1.2"></script>
+<script src="views/space/js/estrellas.js" language="JavaScript1.2"></script>
+<script src="views/space/js/canvas2.js" language="JavaScript1.2"></script>
+<script src="views/space/js/canvas.js" language="JavaScript1.2"></script>
+
+<aside>
+  <img id="pollo" src="views/space/img/pollo1.png" />
+  <br>
+</aside>
+
+
+<div id="game">
+  <div id="main" class="frame visible">
+    <h1>
+Espacio estelar
+</h1>
+    <button onclick="game.setFrameVisible('canvas');game.setFrameHidden('main');">
+      Jugar Space
+    </button>
+    <button onclick="game.setFrameVisible('highscores');game.setFrameHidden('main');">
+      Jugar Snake
+    </button>
+    <button onclick="game.setFrameVisible('about');game.setFrameHidden('main');">
+      Creditos
+    </button>
+  </div>
+
+  <div id="canvas" class="frame hidden">
+    <canvas id="lienzo">tu navegador no es compatible
+    </canvas>
+
+    <button onclick="game.setFrameVisible('main');game.setFrameHidden('canvas');">
+      Volver al menu
+      <a href=""></a>
+    </button>
+
+  </div>
+
+  <div id="highscores" class="frame hidden">
+    <canvas id="lienzo1" width="400" height="400"> tu navegador no es compatible</canvas>
+    <button onclick="game.setFrameVisible('main');game.setFrameHidden('highscores');">
+      Volver al menu
+    </button>
+  </div>
+
+  <div id="about" class="frame hidden">
+
+    <p><b>Copyright @2016<br>
+ Diego Andres Alcali & Carlos Alexis Torres </b>
+      <br> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Universidad Distrital Francisco Jose de Caldas
+      </br>
+      Ing. Sistemas</p>
+
+    <button onclick="game.setFrameVisible('main');game.setFrameHidden('about');">
+      Volver al menu
+    </button>
+  </div>
+</div>
