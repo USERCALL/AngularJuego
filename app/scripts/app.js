@@ -30,11 +30,6 @@ angular
         controller: 'SnakeCtrl',
         controllerAs: 'snake'
       })
-      .when('/pursuit', {
-        templateUrl: 'views/pursuit.html',
-        controller: 'PursuitCtrl',
-        controllerAs: 'pursuit'
-      })
       .when('/space', {
         templateUrl: 'views/space.html',
         controller: 'SpaceCtrl',
